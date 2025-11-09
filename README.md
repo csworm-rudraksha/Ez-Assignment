@@ -92,7 +92,6 @@ The navbar:
 - React 18
 - Vite
 - CSS3
-- Axios (for contact form)
 
 ## Design Notes
 
