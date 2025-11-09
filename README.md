@@ -1,4 +1,4 @@
-# VFilms - Single Page Website ( Ez Assignment )
+# VFilms - Single Page Website ( Ez Assignment ) 
 
 A beautiful single-page React website showcasing VFilms' storytelling services with smooth vertical scrolling and a functional navigation bar.
 
@@ -7,26 +7,26 @@ A beautiful single-page React website showcasing VFilms' storytelling services w
 ```
 src/
 ├── components/
-│   └── NavBarComponent/
-│       ├── Navbar.jsx          # Navigation component with smooth scroll
-│       └── Navbar.css
-├── pages/
-│   ├── Home.jsx                # Home page with mandala and logo
-│   ├── Home.css
-│   ├── Hero.jsx                # About page with team silhouettes
-│   ├── Hero.css
-│   ├── AboutUs.jsx             # Portfolio/stats page
-│   ├── AboutUs.css
-│   ├── Services.jsx            # Services page
-│   ├── Services.css
-│   ├── Portfolio.jsx           # Portfolio page
-│   ├── Portfolio.css
-│   ├── Contact.jsx             # Contact form page
-│   └── Contact.css
-├── App.jsx                     # Main app component
-├── App.css                     # Global app styles
-├── main.jsx                    # Entry point
-└── index.css                   # Global styles
+│   ├── NavBarComponent/
+│   │   └── Navbar.jsx          
+│   ├── Home.jsx              
+│   ├── Hero.jsx               
+│   ├── AboutUs.jsx            
+│   ├── Services.jsx          
+│   ├── Portfolio.jsx          
+│   └── Contact.jsx            
+├── styles/
+│   ├── Navbar.css          
+│   ├── Home.css           
+│   ├── Hero.css           
+│   ├── AboutUs.css            
+│   ├── Services.css           
+│   ├── Portfolio.css           
+│   ├── Contact.css           
+│   ├── App.css             
+│   └── index.css       
+├── App.jsx                  
+└── main.jsx                    
 ```
 
 ## Features
@@ -92,6 +92,7 @@ The navbar:
 - React 18
 - Vite
 - CSS3
+- Axios (for contact form)
 
 ## Design Notes
 
