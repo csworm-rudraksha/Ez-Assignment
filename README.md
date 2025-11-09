@@ -108,3 +108,5 @@ All assets are located in `/public/assets/`:
 - `/public/assets/images/` - Image files
 - `/public/assets/vectors/` - SVG vector files
 - `/public/assets/logo/` - Logo files
+## Dump File Postman
+<img src="Postman Dump.png" alt="X" width="750" height="400">
