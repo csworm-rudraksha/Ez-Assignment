@@ -1,0 +1,275 @@
+.contact-heading {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-heading {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+.contact-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: #FFF8F0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 157, 125, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 157, 125, 0.03) 0%, transparent 50%);
+  padding-top: 80px;
+}
+
+.decorative-img {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.decorative-top {
+  top: 0;
+  right: 0;
+}
+
+.decorative-bottom {
+  bottom: 0;
+  left: 4px;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 60px;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-intro {
+  width: 30%;
+  max-width: 400px;
+  flex-shrink: 0;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #252729;
+  width: 87%;
+  text-align: start;
+}
+
+.contact-form-container {
+  color: #252729;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.form-title {
+  font-size: 36px;
+}
+
+.form-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  z-index: 1;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-label {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 8px 16px;
+  background: white;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #e5e7eb;
+  font-size: 16px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #10b981;
+  font-size: 14px;
+}
+
+.submit-button {
+  width: 100px;
+  background: #F15D2B;
+  color: white;
+  padding: 8px 0;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #d14a1f;
+}
+
+.form-footer {
+  margin-top: 60px;
+  font-size: 14px;
+  color: #4b5563;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.footer-link {
+  color: #F15D2B;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-separator {
+  color: #F15D2B;
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 40px 40px;
+    gap: 40px;
+  }
+
+  .contact-intro {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .intro-text {
+    width: 100%;
+  }
+
+  .contact-form-container {
+    max-width: 100%;
+  }
+
+  .decorative-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 24px;
+    gap: 32px;
+  }
+
+  .form-title {
+    font-size: 28px;
+  }
+
+  .form-subtitle {
+    font-size: 18px;
+  }
+
+  .decorative-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 30px 16px;
+    gap: 24px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .form-subtitle {
+    font-size: 16px;
+  }
+
+  .decorative-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+

@@ -1,0 +1,288 @@
+.hero-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFF8F0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 157, 125, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 157, 125, 0.03) 0%, transparent 50%);
+}
+
+.hero-main {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 60px 48px;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 168px);
+}
+
+.sticky-note-container {
+  position: absolute;
+  transform: rotate(-2deg);
+  z-index: 20;
+  top: 0;
+  left: 130px;
+}
+
+.sticky-note-img {
+  height: 500px;
+  width: 520px;
+  object-fit: contain;
+}
+
+.gate-container {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 400px;
+  height: 400px;
+}
+
+.gate-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.branding-arrow {
+  position: absolute;
+  z-index: 10;
+  bottom: 280px;
+  left: 400px;
+  width: 200px;
+  height: 180px;
+}
+
+.branding-arrow .arrow-img {
+  width: 150px;
+  height: 100%;
+  object-fit: contain;
+  margin-left: 80px;
+  margin-top: -20px;
+  transform: rotate(5deg);
+}
+
+.branding-label {
+  position: absolute;
+  bottom: -40px;
+  left: 30px;
+  font-size: 24px;
+  color: #1f2a37;
+  white-space: nowrap;
+}
+
+.silhouettes-container {
+  position: absolute;
+  bottom: 380px;
+  left: 66%;
+  transform: translateX(-50%);
+  width: 550px;
+  height: 450px;
+}
+
+.silhouettes-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.filmmakers-label {
+  position: absolute;
+  top: -150px;
+  left: 50px;
+  font-size: 24px;
+  color: #1f2a37;
+}
+
+.filmmakers-arrow {
+  position: absolute;
+  top: -100px;
+  left: 100px;
+  width: 150px;
+  height: 100px;
+}
+
+.filmmakers-arrow .arrow-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(-8deg);
+}
+
+.artcurators-label {
+  position: absolute;
+  top: 0;
+  right: -170px;
+  font-size: 24px;
+  color: #1f2a37;
+  white-space: nowrap;
+}
+
+.artcurators-arrow {
+  position: absolute;
+  top: 50px;
+  right: -150px;
+  width: 170px;
+  height: 120px;
+}
+
+.artcurators-arrow .arrow-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(10deg);
+}
+
+.cta-container {
+  position: absolute;
+  width: 100%;
+  bottom: 200px;
+  left: 65%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.cta-heading {
+  font-size: 36px;
+  color: #1f2a37;
+  margin-bottom: 24px;
+  padding: 0 16px;
+  margin-left: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #FF6B4A;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 107, 74, 0.3);
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: #FF5533;
+}
+
+@media (max-width: 1024px) {
+  .hero-main {
+    padding: 120px 40px 24px;
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+  .sticky-note-container {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 40px;
+    transform: rotate(0deg);
+  }
+
+  .sticky-note-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .gate-container {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 40px auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .silhouettes-container {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .branding-arrow,
+  .filmmakers-arrow,
+  .artcurators-arrow {
+    display: none;
+  }
+
+  .cta-container {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 40px auto;
+  }
+
+  .cta-heading {
+    font-size: 28px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-main {
+    padding: 100px 16px 24px;
+  }
+
+  .sticky-note-img {
+    max-width: 300px;
+  }
+
+  .gate-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .silhouettes-container {
+    max-width: 300px;
+  }
+
+  .cta-heading {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-main {
+    padding: 80px 12px 20px;
+  }
+
+  .sticky-note-img {
+    max-width: 250px;
+  }
+
+  .gate-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cta-heading {
+    font-size: 20px;
+  }
+}
+

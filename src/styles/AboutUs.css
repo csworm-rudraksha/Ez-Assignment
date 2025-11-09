@@ -1,0 +1,238 @@
+.aboutus-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #FFF8F0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 157, 125, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 157, 125, 0.03) 0%, transparent 50%);
+}
+
+.aboutus-main {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  height: 1080px;
+}
+
+.aboutus-section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 80px 60px;
+}
+
+.aboutus-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%;
+  margin-top: 70px;
+}
+
+.aboutus-heading {
+  font-size: 36px;
+  color: #1f2a37;
+}
+
+.aboutus-description {
+  color: #374151;
+  font-size: 18px;
+  line-height: 1.75;
+  max-width: 55%;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.cards-container {
+  position: relative;
+  display: flex;
+  margin-top: 80px;
+}
+
+.card {
+  position: relative;
+}
+
+.card-1 {
+  z-index: 10;
+}
+
+.card-2 {
+  z-index: 20;
+  margin-left: -120px;
+}
+
+.card-3 {
+  z-index: 30;
+  margin-left: -120px;
+}
+
+.card-img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.aboutus-right {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 48px;
+  gap: 16px;
+}
+
+.quote-text {
+  font-size: 70px;
+  color: #1f2a37;
+  line-height: 1.75;
+  text-align: center;
+  width: 830px;
+  max-width: 900px;
+  margin-bottom: 32px;
+  margin-top: 40px;
+}
+
+.circular-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  top: 40px;
+  left: 60px;
+}
+
+.circular-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mountain-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 40px;
+  bottom: 200px;
+}
+
+.mountain-img {
+  height: 100%;
+  width: 450px;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .aboutus-main {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .aboutus-section {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .aboutus-left,
+  .aboutus-right {
+    width: 100%;
+  }
+
+  .aboutus-left {
+    margin-top: 0;
+  }
+
+  .aboutus-description {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .quote-text {
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .mountain-container {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 40px auto;
+  }
+
+  .mountain-img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .circular-container {
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus-section {
+    padding: 40px 24px;
+  }
+
+  .aboutus-heading {
+    font-size: 28px;
+  }
+
+  .aboutus-description {
+    font-size: 16px;
+  }
+
+  .card-img {
+    width: 200px;
+  }
+
+  .quote-text {
+    font-size: 36px;
+  }
+
+  .circular-container {
+    height: 250px;
+  }
+
+  .mountain-img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-section {
+    padding: 30px 16px;
+  gap: 30px;
+  }
+
+  .aboutus-heading {
+    font-size: 24px;
+  }
+
+  .card-img {
+    width: 150px;
+  }
+
+  .quote-text {
+    font-size: 28px;
+  }
+
+  .circular-container {
+    height: 200px;
+  }
+}
+
