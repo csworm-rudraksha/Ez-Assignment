@@ -1,4 +1,4 @@
-# VFilms - Single Page Website
+# VFilms - Single Page Website ( Ez Assignment )
 
 A beautiful single-page React website showcasing VFilms' storytelling services with smooth vertical scrolling and a functional navigation bar.
 
